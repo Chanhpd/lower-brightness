@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#1E1E1E">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bộ lọc màn hình"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hẹn giờ tắt: Đang tắt"
+        android:textColor="#E0E0E0"
+        android:textSize="13sp"
+        android:layout_marginTop="4dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btnDecrease"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_media_previous"
+            android:tint="#FFFFFF"
+            android:contentDescription="Giảm" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:max="100"
+            android:progress="50"
+            android:progressTint="#FFB300" />
+
+        <TextView
+            android:id="@+id/tvPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50%"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginEnd="8dp"/>
+
+        <ImageButton
+            android:id="@+id/btnIncrease"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_media_next"
+            android:tint="#FFFFFF"
+            android:contentDescription="Tăng" />
+
+        <ImageButton
+            android:id="@+id/btnStop"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:tint="#FF5252"
+            android:contentDescription="Tắt" />
+
+    </LinearLayout>
+
+</LinearLayout>

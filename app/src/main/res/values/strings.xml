@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Lower Brightness</string>
+    <string name="device_admin_label">Hẹn giờ khóa màn hình</string>
+    <string name="device_admin_description">Cho phép ứng dụng tự động khóa màn hình sau khi hết thời gian đếm ngược.</string>
 </resources>
